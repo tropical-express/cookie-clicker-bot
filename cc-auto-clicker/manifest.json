@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Unofficial Auto Clicker for Cookie Clicker",
+  "version": "1.0",
+  "description": "Adds a toggleable auto-clicker to Cookie Clicker. Unofficial and educational.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://orteil.dashnet.org/cookieclicker/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://orteil.dashnet.org/cookieclicker/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
